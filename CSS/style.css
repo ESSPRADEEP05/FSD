@@ -1,0 +1,19 @@
+.ext{
+    color: orange;
+    background-color: blue;
+
+}
+#para{
+    color: black;
+    background-color: red;
+}
+body{
+    font-size: 22px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(177, 223, 24);
+    /* width: 350px; */
+    /* height: 200px; */
+}
+html{
+    text-align: center;
+}
