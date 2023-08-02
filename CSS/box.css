@@ -1,8 +1,33 @@
-div{
-
+.main{
+    height: 1000px;
+    width:fit-content;
+    margin: 10px;
+    background-color: grey;
+}
+/* .margin{ */
+    /* height:00px; */
+    /* width:400px; */
+    /* background-color: grey; */
+    /* margin:100px; */
+/* } */
+.border{
+    height:600px;
+    width:600px;
+    border:50px solid orange;
+    padding:150px;
+    margin: 100px;
+}
+.padding{
+    height: 400px;
+    width: 400px;
+    background-color: green;
+    padding: 100px;
+}
+.content{
+    height:200px;
+    width: 200px;
+    background-color: aqua;
+    padding:50px;
     margin:50px;
-    padding:30px;
-    border:30px solid green;
-    height: 300px;
-    width: 650px;
+
 }
