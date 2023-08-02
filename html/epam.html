@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style3.css" />
+  </head>
+  <body>
+    <div class="part1"></div>
+    <div class="part2">
+    <div class="logo"><fieldset>
+      <figure>
+        <img src="../images/task/epam.png" height="40px" width="200px" />
+      </figure>
+    </fieldset>
+    </div>
+<br><br><br><br><br><br>
+<div class="nav">
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#header">HEADERS</a>
+      <a href="#Table">TABLE</a>
+      <a href="#list">LIST</a>
+      <a href="#textformat">TEXT FORMATS</a>
+      <a href="#blockquotes">BLOCKQUOTES</a>
+    </nav>
+    </div>
+    <br><br>
+    <header><h1>HTML ELEMENTS</h1></header>
+    <hr />
+    
+    <p id="home">
+      Pay attention to h1 tag inside section element. Font-size for h1 is the
+      same as font -size for h2,because we have to use only one h1 on<br />
+      the page, and it is commonly used inside header
+    </p>
+    <h2 id="header">Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+    <br />
+    <h2>paragraph tag</h2>
+    <p>
+      Lorem ipsum dolor sit amet, <a href="#">test link</a>adipscing elit,
+      <strong>This is strong.</strong>Nullam dignissim convallis est. Quisque
+      aliquam.<em>This is emphasized.</em> Donec facucibus, Nune iaculis
+      suscipit dui. 5<sup>3</sup>=125. Water is H<sub>2</sub>O. Nam sit amet
+      sem. Aliquam libero nisi, imperdiet at,tincidunt nec,gravida
+      vehicula,nisl.The New York Times(That's a citation).<u>Underline</u>.
+      Maecenas ornare tortor. Donee sed tellus eget sapien fringilla nonummy.
+      Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat
+      in, nune. <span class="span1">Morbi imperdiet </span>augue
+      <b><span id="span2">quis tellus.</span></b>
+    </p>
+    <br />
+    <p>
+      HTML and CSS are out tools. Mauris a ante.
+      <mark class="mark">Suspendisse</mark> quam sem,consequat at, commodo
+      vitae,feugiat in, nune. Morbi imperdiet augue quis tellus. Praesent
+      mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat
+      enim diam eget metus. To copy a file type COPY filename.<s>
+        Dinner's at 5:00.</s
+      ><mark>Let's make that 7.</mark>This text has been struck.
+    </p>
+    <hr />
+    <h2 id="Table">Table</h2>
+    <table border="1" cellspacing="0" align="center">
+      <thead>
+        <tr>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lviv</td>
+          <td>Kyiv</td>
+          <td>Kharkiv</td>
+        </tr>
+        <tr>
+          <td>Odessa</td>
+          <td>Zhytomyr</td>
+          <td>Dnipro</td>
+        </tr>
+        <tr>
+          <td>Sumy</td>
+          <td>Chernivtsi</td>
+          <td>Lutsk</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 id="list">Unordered List</h2>
+    <br />
+   <div class="ul"> <ul>
+      <li>List item 1</li>
+      <li>
+        List item 2
+        <ul>
+          <li>Some nested list item 1</li>
+        </ul>
+      </li>
+      <li>List item 3</li>
+    </ul>
+    </div>
+    <br />
+    <h2>Ordered List</h2>
+    <br />
+    <div class="ol"><ol>
+      <li>list item 1</li>
+      <li>List item 2 <ol type="A"><li>nested list from list item 2</li></ol></li>
+      <li>List item 3</li>
+    </ol>
+    </div>
+    <br />
+    <h2>Definition List</h2>
+    <dl>
+      <dt><b>defines terms 1</b></dt>
+      <dd>description 1</dd>
+      <dt><b>defines terms 2</b></dt>
+      <dd>description 2</dd>
+    </dl>
+    <label
+      >Details:
+      <select>
+        <option>html</option>
+        <option>css</option>
+        <option>js</option>
+      </select>
+    </label>
+    <h2 id="textformat">Text formats</h2>
+    <article>
+      <h3>Article Text</h3>
+    </article>
+    <h3>Article title</h3>
+    <p>Article description</p>
+    <h2>Preformatted text</h2>
+    <div class="pre">
+      <pre>
+Text
+    in a pre element
+        is displayed in a fixed-width
+    font, and it preserves
+    both
+     spaces and 
+        line breaks
+</pre
+      >
+    </div >
+    <h2>Code</h2>
+    <div class="code">
+      <code>
+        <pre>
+.wrapper {
+  display:flex;
+                 vertical-align:middle;
+                    justify-content:center;
+        }
+</pre
+        >
+      </code>
+    </div>
+    <h2 id="blockquotes">Blockquotes</h2>
+    <p>
+      Let's keep it simple. Italics are good to help set it off from the body
+      text. Be sure to style the citation.
+    </p>
+
+    <p id="italic">
+      "If you go back a few hundred years, what we take for granted today would
+      seem like magie-being able to talk to people over long distances, to
+      transmit images, flying, accessing vast amounts of data like an oracle.
+      These are all things that would have been considered magic a few hundred
+      years ago."<br />
+      <a href="https:www.wikipedia.org/wiki/Elon_Musk">Elon Musk</a>
+    </p>
+    <form>
+      <label for="firstName"
+        >First name:
+        <input type="text" id="firstName" required/>
+      </label>
+      <br />
+      <label for="surName"
+        >Surname:
+        <input type="text" id="surName" required/>
+      </label>
+      <br />
+      <label for="email"
+        >Email:
+        <input type="email" id="email" required/>
+      </label>
+      <br /><br />
+
+      <textarea rows="10"></textarea>
+      <br />
+      <button type="submit">submit</button>
+      <button type="reset">reset</button>
+    </form>
+    <footer>
+      <p><center>©Copyright Epam Systems</center></p>
+    </footer>
+</div>
+<div class="part3"></div>
+  </body>
+</html>

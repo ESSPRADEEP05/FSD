@@ -1,0 +1,31 @@
+.main{
+    height: 1000px;
+    width:fit-content;
+    margin-left: 100px;
+    background-color: grey;
+}
+/* .margin{ */
+    /* height:400px; */
+    /* width:400px; */
+    /* background-color: grey; */
+    /* margin:100px; */
+/* } */
+.border{
+    height:600px;
+    width:600px;
+    border:100px solid orange;
+    padding:100px;
+}
+.padding{
+    height: 400px;
+    width: 400px;
+    background-color: green;
+    padding: 100px;
+}
+.content{
+    height:200px;
+    width: 200px;
+    background-color: aqua;
+    padding:100px;
+
+}

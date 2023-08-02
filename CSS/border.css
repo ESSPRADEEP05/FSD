@@ -1,0 +1,16 @@
+.one{
+    /* border-style: dashed; */
+    /* border-width: 25px; */
+    /* border-color: red; */
+    height: 400px;
+    width: 600px;
+    background-color: pink;
+    outline: 25px dotted red;
+}
+/* .two{ */
+    /* height: 400px; */
+    /* width:600px; */
+    /* background-color: white; */
+    /* border: 25px dotted red; */
+    /* text-align: center; */
+/* } */

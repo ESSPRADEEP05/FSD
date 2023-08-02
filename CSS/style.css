@@ -5,15 +5,42 @@
 }
 #para{
     color: black;
-    background-color: red;
+    background-color: rgb(8, 240, 136);
+    width: 350px; 
+    height: 25px; 
+    
 }
-body{
+*{
     font-size: 22px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgb(177, 223, 24);
-    /* width: 350px; */
-    /* height: 200px; */
+    text-align:center;
 }
-html{
-    text-align: center;
+/*element selector*/
+p{
+    background-color: aqua;
+    width: 350px; 
+    height: 25px; 
+}
+/*atttribute selector*/
+p[class]
+{
+    background-color: black;
+    color:aqua;
+}
+/* img[alt]{ */
+    /* height: 200px; */
+    /* width: 200px; */
+    /* box-shadow: 5px 5px blue; */
+/* } */
+/*BACKGROUND IMAGE TAG*/
+body{
+    background-image: url("../images/india/virat.jpeg");
+background-repeat: no-repeat;
+background-size: 90%;
+
+}
+a:hover
+{
+    background-color: green;
 }

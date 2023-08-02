@@ -1,0 +1,103 @@
+/* div{ */
+    /* border:20px; */
+    /* background-color: aqua; */
+/* } */
+.six,.seven,.twelve,.thirteen,.fourteen,.fifteen,.ten,.eleven{ 
+    background-color: aqua;
+    border: 2px solid red;
+} 
+.one{
+    height: 800px;
+    width: 800px;
+}
+.two{
+    height: 400px;
+    width: 400px;
+    float: left;
+    display: flex;
+}
+.three{
+    height: 400px;
+    width: 400px;
+    float:right;
+    display: flex;
+     
+}
+.four{
+    height:200px;
+    width: 200px;
+    float: left;
+    display: flex;
+     
+
+}
+.five{
+    height:200px;
+    width: 200px;
+    float:right;
+    display: flex;
+     
+
+}
+.six{
+    height: 96px;
+    width: 96px;
+
+
+     
+}
+.seven{
+    height: 96px;
+    width: 96px;
+    float:left;
+     
+}
+.eight{
+     
+    height:200px;
+    width: 200px;
+    float:left;
+}
+.nine{
+     
+    height:200px;
+    width: 200px;
+    float:right;
+}
+.twelve{
+    height: 96px;
+    width: 96px;
+    float:left;
+     
+}
+.thirteen{
+    height: 96px;
+    width: 96px;
+    float:left;
+     
+}
+.fourteen{
+    height: 96px;
+    width: 96px;
+    float:right;
+     
+}
+.fifteen{
+    height: 96px;
+    width: 96px;
+    float:right;
+     
+}
+.ten{
+    height: 100px;
+    width: 100px;
+    float:left;
+     
+}
+.eleven{
+    height: 100px;
+    width: 100px;
+    float: right;
+     
+}
+

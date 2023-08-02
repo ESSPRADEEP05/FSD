@@ -1,0 +1,8 @@
+.multiborder{
+        height: 100px;
+        width:500px;
+        border: 12px dashed firebrick;
+        background: linear-gradient(to top,#fff, #fff),rgb(15, 239, 243);
+        background-clip: padding-box, border-box;
+
+      }

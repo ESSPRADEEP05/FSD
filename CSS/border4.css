@@ -1,0 +1,15 @@
+.im{
+	width: 400px;
+	height: 80px;
+	border: 10px solid;
+	border-image: url('../images/task/gradient2.jpg') 50 fill / 30px stretch;
+}
+.one{
+	height: 200px;
+	width: 450px;
+	background: linear-gradient(180deg,orange,red,brown);
+	border-radius: 20px;
+	border: 5px solid burlywood;
+	box-shadow: 3px 3px;
+	
+}

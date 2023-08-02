@@ -1,0 +1,76 @@
+.logo{
+    text-align: left;
+}
+.para{
+    font-size:16px;
+    color: black;
+    text-align: right;
+    padding-right: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.learn{
+    background-color: rgb(62, 161, 248);
+    height: 50px;
+    width: 200px;
+    margin-right: 100px;
+    border-radius: 25px;
+    color:white;
+    float:right;
+   /* text-align: right; */
+}
+.heading{
+    text-align: right;
+    font-size: 100px;
+    font-weight:bold;
+    color: orange;
+    padding-right: 80px;
+}
+.one{
+    height: 90px;
+    width: 180px;
+    background-image: url("../images/task/tlogo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h2{
+    margin: 12px;
+    text-align: center;
+}
+.two{
+    background-image: url("../images/task/555.png");
+    background-size: cover;
+    background-repeat: no-repeat;   
+    height: 1200px;
+
+    /* opacity: 0.5; */
+}
+/* .three{ */
+    /* height: 110px; */
+    /* width: 500px; */
+/*  */
+/* } */
+.second{
+    background-color: rgb(48, 153, 244);
+    height: 800px;
+    width: 1500px;
+    
+}
+
+.third,.five{
+    height:400px;
+    width:250px;
+    float:left;
+    background-color: rgb(107, 159, 205);
+    border-radius: 30px;
+    margin-right: 20px;
+    text-align: center;
+}
+.four,.six{
+    height:400px;
+    width:250px;
+    float:left;
+    background-color: rgb(147, 163, 177);
+    border-radius: 30px;
+    margin-right: 20px;
+    text-align: center;
+}

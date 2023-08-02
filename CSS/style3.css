@@ -1,0 +1,125 @@
+h1{
+    text-align: left;
+}
+figure{
+    text-align: center;
+}
+a{
+    padding-right:20px ;
+}
+.span1{
+    font-size: 10px;
+}
+.span2{
+    font-size: 24px;
+    font-weight:bold;
+}
+.mark{
+    background-color: rgb(250, 250, 156);
+}
+td,th,td{
+    padding-bottom: 20px;
+    padding-right: 150px;
+}
+/*div {
+    background-color: black;
+    text-align: center;
+    font-size: 14px;
+}*/
+#italic{
+    font-style: italic;
+}
+footer{
+    margin-top:20px;
+    background-color:rgb(117, 26, 192);
+    height: 200px;
+    width: 1490px;
+    margin-right: 290px ;
+    margin-left:-145px;
+
+}
+form{
+    text-align: right;
+}
+/* .first{ */
+    /* width:700px; */
+    /* background-color: white; */
+    /* float:left; */
+/* } */
+/* .second{ */
+    /* width:200px; */
+    /* background-color: aqua; */
+    /* floar:right; 
+ } */
+ .part1,.part3{
+    height:3535px;
+    width: 135px;
+    background-color: rgb(117, 26, 192);
+    
+
+ }
+ .part1{
+    float:left;
+    margin-left:10px;
+ }
+ .part1,.part2,.part3{
+    display: inline-block;
+
+ }
+ .part2{
+    height: auto;
+    width: 1200px;
+    float:left;
+    margin:auto 10px;
+    color:white;
+    background-color: black;
+ }
+.part3{
+    float:left;
+}
+ html{
+    font-size: 22px;
+    background-color:orange;
+ }
+ .nav{
+    padding-top:10px;
+    height:40px;
+    width:1200px;
+    background-color:darkblue;
+    font-size: 15px;
+ }
+ a{
+    
+    color:rgb(220, 150, 214);
+    margin-right: 20px;
+    margin-left: 20px;
+    padding:0;
+ }
+ .logo{
+    height:150px;
+    width:1200px;
+    background-color: aqua;
+ }
+ .logo,.nav{
+    position: fixed;
+ }
+ img{
+ align-self: center;
+ }
+ a:hover{
+    background-color: aqua;
+    color: black;
+ }
+ a:active{
+    color:red;
+ }
+ h1{
+    background-color: yellowgreen;
+    color:darkblue;
+    text-align: center;
+ }
+ h2{
+    background-color: green;}
+ .pre,.code{
+    text-align: center;
+ }
