@@ -1,0 +1,13 @@
+h1{
+    text-align:center;
+}
+div{
+    height:fit-content;
+    width:310px;
+    border-radius: 12%;
+    border: 10px dashed blue;
+}
+p{
+    text-align: center;
+    text-align:justify;
+}

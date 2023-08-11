@@ -1,0 +1,20 @@
+// var a=10;
+// // document.write(a);
+var b="Hi, This is me,I,m";
+// document.write(b+"\t"+a);
+// var c="its not me";
+// document.write(c);
+//  c+= "its me";
+//  document.write(c);
+// document.write(c);
+//
+var name1="pradeep";
+name1+="\t"+"ganesh";
+name1+="&sivaram";
+document.write(name1);
+document.write(b.length+"<br>");
+var d=2;
+document.write(d);
+console.log(2+0.22);
+alert("see in console also");
+window.alert("see");
