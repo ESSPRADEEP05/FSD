@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <style>
+        .radio-container{
+            display: flex;
+            flex-direction: row;
+            margin-left: 42%;
+            
+        }
+        .radio-item
+        {
+            display: flex;
+            flex-direction: column; /* Align label below radio button */
+            align-items: center; /* Center items horizontally */
+            margin-right: 20px; /* Space between radio items */
+        }
+        input{
+            cursor: pointer;
+        }
+        button{
+            background:linear-gradient(lightgreen,orange);
+            height: 40px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <br>
+    <center>
+        <h1>TO PLAY THE GAME CLICK PLAY</h1>
+    <div class="radio-container">
+        <div class="radio-item">
+            <input type="radio" name="number" value="1">
+            <label for="radio1">1</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" name="number" value="2">
+            <label for="radio2">2</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" name="number" value="3">
+            <label for="radio3">3</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" name="number" value="4">
+            <label for="radio4">4</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" name="number" value="5">
+            <label for="radio5">5</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" name="number" value="6">
+            <label for="radio6">6</label>
+        </div>
+    </div><br>
+    <button onclick="game()">play</button><br><br>
+    <input id="demo" type="text"><br>
+    <p id="out"></p>
+    </center>
+    <script>
+        function game() {
+            var radios = document.getElementsByName("number");
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    val = radios[i].value;
+                    break; 
+                }
+            }
+            let res=document.getElementById("demo");
+            var z=Math.floor(Math.random() * 6)+1;
+            res.value=z
+            if(val==z){
+                document.getElementById('out').innerText='you won';
+            }
+            else{
+                document.getElementById('out').innerText='you loose';
+            }
+        }
+        
+    </script>
+</body>
+</html>

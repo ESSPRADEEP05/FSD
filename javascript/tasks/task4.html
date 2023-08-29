@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <p>Enter some text in the fields below, then press the "Submit" form button
+        
+        <form id="myForm" onsubmit="return validateForm()" method="post">
+          First name: <input type="text" name="fname" id="fname_id"><br><
+          Last name<input type="text" name="lname" id="lname_id"><br><br>
+          Email: <input type="email" name="email" id="e_id"><br><br>
+          Password<input type="password" name="pswd" id="p_id"><br><br>
+          Enter the DOB:<input type="date" id="date_id"><br><br>
+        
+          <select name="colleges" id="clg_id">
+              <option value="">select college </option>
+              <option value="AEC">AEC</option>
+              <option value="ACET">ACET</option>
+              <option value="ACOE">ACOE</option>
+          </select><br><br>
+          Branch:
+          <input type="radio" name="branch" value="CSE" id="branch_id">CS
+          <!-- <input type="radio" name="branch" value="AIML" id="branch_
+          <input type="radio" name="branch" value="MECH" id="branch_id">M
+          <input type="radio" name="branch" value="ECE" id="branch_id">EC
+          <input type="radio" name="branch" value="EEE" id="branch_id">EE
+           <input type="radio" name="branch" value="CIVIL" id="branch
+        
+          <br><br>
+          Languages:  <br>
+          <input type="checkbox" name="lang" value="English" id="lan_id">
+          <input type="checkbox" name="lang" value="Hindi" id="lan_id">PY
+          <input type="checkbox" name="lang" value="Telugu" id="lan_id">J
+          <input type="checkbox" name="lang" value="Telugu" id="lan_id">C
+        
+           <input type="checkbox" name="lan" value="Tamil" id="lan_id
+           <input type="checkbox" name="lan" value="Malayalam" id="la
+        
+           Suggestions:<br> -->
+          <!-- <textarea rows="5" cols="50" name="sug" placeholder="Write
+           Upload the file:<input type="file"><br><br> -->
+            <!-- <input type="submit" value="Submit"><br><br> -->
+        </form>
+        
+        <script>
+        function validateForm(){
+          let fname = document.getElementById('fname_id').value;
+          let lname = document.getElementById('lname_id').value;
+          let email = document.getElementById('e_id').value;
+          let pswd = document.getElementById('p_id').value;
+          let birth = document.getElementById('d_id').value;
+          let clg = document.getElementById('clg_id').value;
+          //let branch=document.getElementById('branch_id').value;
+          //let lan=document.getElementById('lan_id').value;
+          let branch = document.querySelector('input[name="branch"]:check
+          let lan = document.querySelectorAll('input[name="lan"]:checked'
+        
+          if(fname == ''){
+            alert("first name");
+            return false;
+          }
+          if(lname == ''){
+            alert("last name");
+            return false;
+          }
+          if(email == ''){
+            alert("enter Email");
+            return false;
+          }
+          if(pswd == ''){
+            alert(" enter password");
+            return false;
+          }
+          if(birth == ''){
+            alert("Date of Birth:");
+            return false;
+          }
+          if(clg == ''){
+            alert("college");
+            return false;
+          }
+          if(!branch){
+            alert("Branch");
+            return false;
+          }
+          if(lan.length === 0){
+            alert("language");
+            return false;
+          }
+        }
+        </script>
+        </center>
+</body>
+</html>

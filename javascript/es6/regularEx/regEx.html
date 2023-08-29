@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>regular expressions</h1>
+    <script type="text/javascript">
+      let str = "Pradeep";
+      //  /pattern/ -->regular expression
+      let re = /batch/; 
+      // /pattern/i --> case insensitive regular expression
+      let re1=/batch/i 
+    // modifiers 
+    // i => performs case insensitive matching
+    //g=> global matching(continues even after first match)
+    // m=>mutliline matching
+      //checking whether that pattern is there in the taken string.
+      let op=re.test("full stack batch");
+      let output=re1.test("full stack bAtCh");
+      console.log(op);
+      if(output==true)
+      {
+        console.log("valid");
+      }
+      else{
+        console.log("invalid");
+      }
+    //   console.log(output);
+      let re2=/^b/;//doubt
+      let output2=re2.test("batch is bad"); //true
+      console.log(output2);
+      let re3=/batch/;//g for multiple indexes
+      res=re3.exec("full stack batch course batch");
+      console.log(res);
+      console.log(res.index);
+      res=re3.exec("full stack batch course batch");
+      console.log(res.index);
+      
+    </script>
+  </body>
+</html>

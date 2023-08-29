@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <select>
+            <option value="sc" onchange="sample()">--SELECT COLLEGE--</option>
+            <option value="AEC" onchange=sample()>AEC</option>
+            <option value="ACET" onchange="sample()">ACET</option>
+            <option value="ACOE" onchange="sample()">ACOE</option>
+        </select>
+        <h1 id="h1id"></h1>
+    </center>
+    <script type="text/javascript">
+        function sample(clg_name)
+        {
+            let h=document.getElementById("h1id");
+            h.innerText=clg_name;
+        }
+    </script>
+</body>
+</html>

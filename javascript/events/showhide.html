@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn_id">show</button>
+    <button id="btn_id1">hide</button>
+    <p id="para"></p>
+
+    <script type="text/javascript">
+        let btns=document.getElementById("btn_id");
+        let pa=document.getElementById("para");
+        let btns1=document.getElementById("btn_id1");
+        function show(){
+
+            pa.innerText="show information";
+        } 
+        function hide()
+        {
+            para.style.display="none";
+            
+        }
+        btns.onclick=show;
+        btns1.onclick=hide;
+    </script>
+</body>
+</html>

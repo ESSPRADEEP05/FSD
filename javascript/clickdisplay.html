@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .whole {
+            width: 1400px;
+            height: 600px;
+            border: 1px solid black;
+        }
+
+        .one {
+            height: 100%;
+            width: 70%;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .two {
+            height: 100%;
+            width: 29.73%;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .three,
+        .four,
+        .five {
+            height: 60%;
+            width: 25%;
+            border-right: 2px solid black;
+            float: left;
+            padding: 5% 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="one">
+            <div class="three">
+                <img src="../images/india/virat.jpeg" alt="virat" width="100%" height="450px" id="virat"
+                    onclick="getimg('../images/india/virat.jpeg')" />
+            </div>
+            <div class="four">
+                <img src="../images/india/jadeja.jpeg" alt="jaddu" width="100%" height="450px" id="jadeja"
+                    onclick="getimg('../images/india/jadeja.jpeg')" />
+            </div>
+            <div class="five">
+                <img src="../images/india/rohit.jpeg" alt="rohit" width="100%" height="450px" id="rohit"
+                    onclick="getimg('../images/india/rohit.jpeg')" />
+            </div>
+        </div>
+        <div class="two"></div>
+    </div>
+    <script type="text/javascript">
+        function getimg(src) {
+            if ((id = "virat")) {
+                let img1 = document.getElementById("virat");
+                img1.innerHTML = "<img src=' ../images/india/virat.jpeg'/>";
+            } else if ((id = "jadeja")) {
+                let img1 = document.getElementById("jadeja");
+                img1.innerHTML = "<img src=' ../images/india/jadeja.jpeg'/>";
+            } else if ((id = "rohit")) {
+                let img1 = document.getElementById("rohit");
+                img1.innerHTML = "<img src=' ../images/india/rohit.jpeg'/>";
+            }
+        }
+    </script>
+</body>
+
+</html>

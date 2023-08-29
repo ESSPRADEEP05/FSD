@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>enter the details and press submit buttton to submit the details</p>
+    <form id="form_id" onsubmit="return validateform()">
+        <label>First name:<input type="text" name="fname"></label>
+        <label>Last name:<input type="text" name="lname"></label>
+        <select name="college">
+            <option value="AEC" name="AEC">AEC</option>
+            <option value="ACET" name="ACET">ACET</option>
+            <option value="ACOE" name="ACOE">ACOE</option>
+        </select>
+        <button type="submit" onclick="sample()" value="Submit form">Submit</button>
+        <button type="reset" onclick="resetf()" value="Reset form">Reset</button>
+    </form>
+    <script type="text/javascript">
+        function sample()
+        {
+            document.getElementById("form_id").submit()
+        }
+        function resetf()
+        {
+            document.getElementById("form_id").reset()
+        }
+        function validateform()
+        {
+            
+        }
+    </script>
+</body>
+</html>

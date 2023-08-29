@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- forEach method
+        not creates an array and return it after completion of  the iteration
+    -->
+    <script>
+        let sal=[100000,200000,300000];
+        console.log(sal);
+        sal.forEach(function(amt,i,arr)
+        {
+            var inc=amt/10;
+            console.log(inc);
+            arr[i]=amt+inc;
+        });
+        console.log(sal);
+    </script>
+</body>
+</html>

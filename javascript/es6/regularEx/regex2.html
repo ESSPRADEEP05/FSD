@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>regular expression</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // number
+      re = /^[0-9]{10}/; //valid upto 10 numbers but exceeded the range
+      re2=/^[0-9]{9}$/;//valid upto 10 numbers not exceeded range by $
+      re3=/^[9][0-9]{9}$/;//starting with number 9 and again 9 more numbers after
+      op = re.test("9110797340");
+      op1=re2.test("911079734");
+      op2=re3.test("9110797340")
+      console.log(op);
+      console.log(op1);
+      console.log(op2);
+    </script>
+  </body>
+</html>

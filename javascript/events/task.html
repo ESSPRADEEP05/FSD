@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="incone()" id="btn_id">increment by 1</button>
+    <button onclick="decone()" id="btn_id2">decrement by 1</button>
+    <script>
+        let btn=document.getElementById("btn_id");
+        let btn1=document.getElementById("btn_id2");
+        let i=0;
+        function incone()
+        {
+          btn.innerHTML=++i;
+        }
+        function decone()
+        {
+            if(i>1)
+            btn1.innerText=--i;
+        } 
+        
+    </script>
+</body>
+</html>

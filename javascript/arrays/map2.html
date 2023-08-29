@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="table_id" border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        let trainees = [
+            {
+                name: "ess",
+                roll: "1234",
+            },
+            {
+                name: "pradeep",
+                roll: "4444",
+            },
+        ];
+        let trs="";
+        let arr1 = trainees.map(function (name1, i, arr) {
+            trs +="<tr><td>" +(i + 1) +"</td><td>" +name1.name +"</td><td>" +name1.roll+"</td></tr>";
+        });
+        let tablee=document.getElementById("table_id");
+        tablee.innerHTML=trs;
+    </script>
+</body>
+
+</html>

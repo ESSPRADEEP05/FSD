@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates in javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //date object
+        let d=new Date();
+        document.write(d+"<br>");//day month date year hours minutes seconds timezone
+        //getFullYear()-- returns current year
+        document.write(d.getFullYear()+"<br>");// output-2023
+        //getMonth()-- returns current month
+        document.write(d.getMonth()+1+"<br>");//8 - returns current month in zero indexing 
+        document.write(d.getDate()+"<br>");//25 -returns date
+        document.write(d.getDay()+"<br>");//5
+        document.write(d.getHours()+"<br>");
+        document.write(d.getMilliseconds()+"<br>");
+        document.write(d.getMinutes()+"<br>");
+        document.write(d.getSeconds()+"<br>");
+        document.write(d.getTime()+"<br>");
+        document.write(d.getTimezoneOffset()+"<br>");
+        document.write(d.getVarDate()+"<br>");
+        document.write(d.setDate()+"<br>");
+    </script>
+</body>
+</html>

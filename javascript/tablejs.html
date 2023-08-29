@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <table border="1" id="table_id">
+      <thead>
+        <tr>
+          <th>course name</th>
+          <th>course number</th>
+          <th>course fees</th>
+          <th>place</th>
+        </tr>
+      </thead>
+      <tbody id="tbody_id"></tbody>
+    </table>
+    <script type="text/javascript">
+      let t_data = [
+        {
+          name: "html",
+          number: "23423",
+          fees: "235",
+          place: "dwp",
+        },
+        {
+          name: "css",
+          number: "65687",
+          fees: "567",
+          place: "dwp",
+        },
+        {
+          name: "javascript",
+          number: "67845",
+          fees: "235",
+          place: "dwp",
+        },
+      ];
+      let table = document.getElementById("tbody_id");
+
+      //   for(table)
+      //   let row1 = document.createElement("tr");
+      let c1  = document.createElement("td");
+      let c2  = document.createElement("td");
+      let c3  = document.createElement("td");
+      let c4  = document.createElement("td");
+      let c11 = document.createElement("td");
+      let c21 = document.createElement("td");
+      let c31 = document.createElement("td");
+      let c41 = document.createElement("td");
+      let c12 = document.createElement("td");
+      let c22 = document.createElement("td");
+      let c32 = document.createElement("td");
+      let c42 = document.createElement("td");
+      let row2= document.createElement("tr");
+      let row3= document.createElement("tr");
+      var row1= document.createElement("tr");
+      c1.innerText = t_data[0].name;
+      row1.appendChild(c1);
+      c2.innerText = t_data[0].number;
+      row1.appendChild(c2);
+      c3.innerText = t_data[0].fees;
+      row1.appendChild(c3);
+      c4.innerText = t_data[0].place;
+      row1.appendChild(c4);
+      table.appendChild(row1);
+      c11.innerText = t_data[1].name;
+      row2.appendChild(c11);
+      c21.innerText = t_data[1].number;
+      row2.appendChild(c21);
+      c31.innerText = t_data[1].fees;
+      row2.appendChild(c31);
+      c41.innerText = t_data[1].place;
+      row2.appendChild(c41);
+      table.appendChild(row2);
+      c12.innerText = t_data[2].name;
+      row3.appendChild(c12);
+      c22.innerText = t_data[2].number;
+      row3.appendChild(c22);
+      c32.innerText = t_data[2].fees;
+      row3.appendChild(c32);
+      c42.innerText = t_data[2].place;
+      row3.appendChild(c42);
+      table.appendChild(row3);
+    </script>
+  </body>
+</html>

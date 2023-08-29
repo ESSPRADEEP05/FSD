@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="previous()" id="btn_id">previous</button>
+    <button onclick="next()" id="btn_id2">Next</button>
+    <img src="" class="img_id" alt="">
+    <img src="" class="img_id" alt="">
+    <img src="" class="img_id" alt="">
+    <img src="" class="img_id" alt="">
+    <script>
+        let btn=document.getElementById("btn_id");
+        let btn1=document.getElementById("btn_id2");
+        let i=0;
+        function previous()
+        {
+            let img1=document.getElementsByClassName("img_id");
+            for(i=0;i<4;i++)
+            {
+                btn[i].img1.src="../../images/india/jadeja.jpeg";
+            }
+        }
+        function next()
+        {
+            btn1=document.getElementsByClassName("img_id");
+            btn1.src="../../images/india/virat.jpeg";
+        } 
+        
+    </script>
+</body>
+</html>

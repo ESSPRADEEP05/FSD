@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructor</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      class student {
+        constructor(rno, name, branch, clg) {
+          this.rollno = rno;
+          this.name = name;
+          this.branch = branch;
+          this.college = clg;
+        }
+      }
+      let obj = new student(1232, "Pradeep", "CSE", "AEC");
+      console.log("roll no: " + obj.rollno);
+      console.log("name: " + obj.name);
+      console.log("branch: " + obj.branch);
+      console.log("college: " + obj.college);
+      let obj2 = new student(2345, "siva", "CSE", "AEC");
+      console.log("roll no: " + obj2.rollno);
+      console.log("name: " + obj2.name);
+      console.log("branch: " + obj2.branch);
+      console.log("college: " + obj2.college);
+
+      class car {
+        constructor(name, color, hp, fuel) {
+          this.name = name;
+          this.color = color;
+          this.hp = hp;
+          this.fuel = fuel;
+        }
+      }
+      let car1 = new car("BMW", "black", 738, "petrol/diesel");
+      console.log("car name:"+car1.name);
+      console.log("car color:"+car1.color);
+      console.log("car horsepower:"+car1.hp);
+      console.log("car fuel:"+car1.fuel);
+      let car2 = new car("ferrari","red",835,"premium fuel");
+      console.log("car name:"+car2.name);
+      console.log("car color:"+car2.color);
+      console.log("car horsepower:"+car2.hp);
+      console.log("car fuel:"+car2.fuel);
+    </script>
+  </body>
+</html>

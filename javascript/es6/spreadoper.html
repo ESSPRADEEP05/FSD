@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread operator</title>
+</head>
+<body>
+    <h2>it takes an iteration and expands or seperate each element</h2>
+    <script type="text/javascript">
+        // 1st way
+        let arr=[32,55,453,32,"hii"];
+        let arr2=[233,44323,2,23,23,"second"];
+        console.log(arr);
+        console.log(...arr2,...arr);
+        //2nd way
+        let arr1=[4,5,arr];
+        console.log(4,5,...arr);
+        //3rd way
+        let arr3=[1,2,3,4];
+        let arr4=[5,6,7,8];
+        let arr5=[...arr3,...arr4];
+        console.log(arr5);
+        let arr6=[...arr5,3,3,4,5,...arr3];
+        console.log(arr6);
+        //4th way
+        let str="drive ready";
+        console.log(...str);
+        //using function
+        function sum(a,b,c,d)
+        {
+            console.log(a+b+c+d);
+        }
+        console.log(sum(...arr4));
+    </script>
+
+</body>
+</html>

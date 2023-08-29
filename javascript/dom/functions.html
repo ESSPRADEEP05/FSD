@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //function 
+        function add(a,b)
+        {
+            return a*b;
+        }
+        // document.write(add(4,9));//36
+        // document.write(add(0,0)); // if a=0,b=0 //0
+        // document.write(add(3));//NaN 
+        // taking input from scanner
+        let id=prompt("scan your id:")
+        function getRollByScan(rollno)
+        {
+            document.write(rollno+"<br>");
+        }
+        getRollByScan(id);
+        //cube
+        function cube(c)
+        {
+            return c*c*c;
+        }
+        document.write(cube(3)+"");
+        //arrow function
+        //1)we should not use function keyword
+        //2)after function name we should use '='
+        //3)after paranthesis use which code you want to execute
+        cube2 =(c,d) => document.write(c/d);
+        cube2(4,5);
+        document.write("<br>");
+        test = _ =>
+        {
+            document.write("testing.........");
+        }
+        test();
+        document.write("<br>");
+
+        // anonymous function is a function without having function name
+        var output=function(num)
+        {
+            return (num/2);
+        }
+        document.write(output(40));
+        //setTimeout function
+        //callback function is a function as an argument inside the another function
+        setTimeout(test,3000)
+    </script>
+</body>
+</html>

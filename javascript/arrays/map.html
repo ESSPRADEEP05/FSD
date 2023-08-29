@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+<body>
+    <!-- array methods
+      1-- map() --creates new array and return it after iteration completion.
+      2-- filter
+      3--find
+      4--some
+      5--every 
+    -->
+    <script type="text/javascript">
+        let trainees=['ess','siva','jogesh'];
+        let arr1=trainees.map(function(name,i,arr){
+            return (i+1)+"."+name
+        })
+        console.log(arr1);
+        //or 
+        let arr2=trainees.map(test);
+        function test(trainees){
+            return "Dear "+trainees
+        }
+        console.log(arr2);
+
+
+
+    </script>
+</body>
+</html>

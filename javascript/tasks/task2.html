@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation type</title>
+</head>
+
+<body>
+    <label>enter your name:
+        <input type="text" onkeyup="sample(this.value)" id="in_id" autofocus>
+        </labe1><br><br>
+        <span id="span_id"></span>
+        <script type="text/javascript">
+            in1 = document.getElementById("in_id");
+            span1 = document.getElementById("span_id");
+            function sample(str) {
+                if (str == '') {
+                    span1.style.color = "red";
+                    span1.innerText = "enter your name";
+                    in1.style.outline = "2px solid red";
+                }
+                if (str.length < 3) {
+                    span1.style.color = "red";
+                    span1.innerText = "please enter more than 3 characters";
+                    in1.style.outline = "2px solid red";
+                }
+                else{
+                    span1.innerText="";
+                    in1.style.outline = "2px solid black";
+
+                }
+            }
+        </script>
+</body>
+
+</html>

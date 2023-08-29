@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- mouse events = click, doubleclick mouseover mouseout mousemove
+         keyboard events = key down key up key press
+         form events = submit reset change
+    -->
+    <!-- 
+        3 ways = 1)inline event handlers( by using event attributes in html) = onclcik
+                 2)by using event prorperties in JS (btn.onclick)
+                 3)
+         
+
+     -->
+     <!-- inline handlers -->
+     <!-- click event
+    on is a event listener -->
+     <button onclick="alert('clicked')">click here</button>
+     <button onclick="wel()">click here</button>
+     <button id="btn_id">click here</button>
+     <script type="text/javascript">
+        function wel()
+        {
+            alert("welcome to our webpage");
+            document.body.style.backgroundColor="green";
+        }
+        let btn=document.getElementById("btn_id");
+        let btn1=document.getElementById("btn_id");
+        btn.onclick=wel;
+        //with anonymous function
+        btn1.onclick=function()
+        {
+            alert("testing...")
+            
+        }
+     </script>
+</body>
+</html>

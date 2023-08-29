@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>number format</title>
+  </head>
+  <body>
+    <input type="text" name="" id="in_id" />
+    <button onclick="check_char()" id="btn_id">check validity</button>
+    <span id="span_id"></span>
+    <script type="text/javascript">
+      function check_num() {
+        //re=/^[0-9]{10}$/
+        re = /^[6-9][0-9]{9}$/;
+        let n = document.getElementById("in_id").value;
+        output = re.test(n);
+        if (output == true) {
+          document.getElementById("span_id").innerText = "CORRECT";
+          document.getElementById("span_id").style.color = "green";
+        } else {
+          document.getElementById("span_id").innerText =
+            "please enter correct format";
+          document.getElementById("span_id").style.color = "red";
+        }
+      }
+      function check_char() {
+        // re=/^[a-z]+$(or)$/ --> only small letters
+        // re=/^[A-Z]+$(or)$/
+        // re=/^[a-zA-Z]+$(or)$/
+        // re=/^[a-z0-9A-Z]+$(or)$/ --> alpha numeric characters
+        // re=/^/w+@[a-zA-Z_]+?/.[a-zA-Z][2,3]$/ -->GMAIL
+        re2=/^\w+@[a-zA-Z_]+?\.[a-zA-Z][2,3]$/;
+        let m = document.getElementById("in_id").value;
+        output2 = re2.test(m);
+        if (output2 == true) {
+          document.getElementById("span_id").innerText = "CORRECT";
+          document.getElementById("span_id").style.color = "green";
+        } else {
+          document.getElementById("span_id").innerText =
+            "please enter correct format";
+          document.getElementById("span_id").style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

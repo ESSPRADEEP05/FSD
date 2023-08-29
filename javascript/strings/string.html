@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>strings</title>
+  </head>
+  <body>
+    <table border="1px solid red">
+      <tr>
+        <td>D</td>
+        <td>R</td>
+        <td>I</td>
+        <td>V</td>
+        <td>E</td>
+        <td>&nbsp;</td>
+        <td>R</td>
+        <td>E</td>
+        <td>A</td>
+        <td>D</td>
+        <td>Y</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>-11</td>
+        <td>-10</td>
+        <td>-9</td>
+        <td>-8</td>
+        <td>-7</td>
+        <td>-6</td>
+        <td>-5</td>
+        <td>-4</td>
+        <td>-3</td>
+        <td>-2</td>
+        <td>-1</td>
+      </tr>
+    </table>
+    <script type="text/javascript">
+      let str = " Drive-Ready ";
+      let str2='Afternoon Batch';
+      document.write(str + " " + typeof str + "<br>");
+      let str1 = new String("FSD" + "<br>");
+      let tdc = document.getElementsByClassName("td_id");
+      document.write(str1 + " ");
+      //length
+      document.write(str.length + "<br>");
+      //charAt method
+      document.write("charAt method:" + str.charAt(2) + "<br>");
+      //lastIndexOf method
+      document.write("indexOf method: " + str.indexOf("e") + "<br>");
+      //lastIndexOf method
+      document.write("lastIndexOf method: " + str.lastIndexOf("e")+"<br>");
+      //trim method-- removes spaces from left and right
+      document.write("trim method: " + str.trim()+"<br>");
+      //toLowerCase
+      document.write("toLowerCase: "+str.toLowerCase()+"<br>");
+    //toUpperCase method
+    document.write("toUpperCase"+str.toUpperCase()+"<br>");
+    //concatenation method
+    document.write("concatenating" +str+", "+str1+"and"+str2+":"+str.concat(str1,str2)+"<br>");
+    //includes() => returns boolean value whether it is there or not 
+    document.write("includes a :"+str.includes('a')+"<br>");
+    //split() ==> converting string into array
+    console.log("split: "+str.split(" -")+"<br>");
+    //startsWith
+    document.write("startsWith: "+str2.startsWith('g')+"<br>");
+    //endsWith
+    document.write("ends with: "+str1.endsWith('p')+"<br>");
+    //slice method => str.slice('startpos,endpos-1')
+    document.write("slice method: "+str2.slice(2,5)+"<br>");
+    //substrin method => substring(startpos,length of characters from 1st arg position)
+    document.write("substring: "+str.substring(5,9)+"<br>");
+
+
+    </script>
+  </body>
+</html>
